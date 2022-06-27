@@ -34,10 +34,9 @@ const cart = [
 ]
 
 //CODE HERE
-let cartPrice = [9.99, 8.99, 7.99]
-let cartSummed = cartPrice.reduce(function(acc, cur){
-    return acc + cur
-}) 
+
+
+let cartSummed = cart.reduce((a, c) => a + c.price, 0)
 
 console.log(cartSummed)
 
@@ -94,7 +93,9 @@ let calcFinalPrice = (cartTotal, couponValue, tax) => {
     properties: name, email, favorite menu item, and desired added item. I would have the name
     and email to communicate with the customers about menu item changes. The favorite food
     and desired menu item would be to get a feel for what is working with the menu and 
-    what changes people would like to see.
+    what changes people would like to see. All of the values would be strings. I chose
+    all of those data types because each of the answers are written words and strings
+    are the appropriate data for words.
 
 */
 

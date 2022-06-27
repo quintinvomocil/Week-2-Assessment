@@ -23,6 +23,10 @@
 
 //CODE HERE
 
+const greetUser = (username) => `Welcome back, ${username}`
+
+console.log(greetUser("Andrew"))
+
 
 
 
@@ -51,6 +55,15 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
+function weCanDeliver(zipcode){
+    if (zipcode === 85205 || zipcode === 85204 || zipcode === 85213){
+        console.log("You're in our delivery zone!")
+    }   else {
+        console.log("Sorry, we can't deliver to that address.")
+    }
+}
+
+weCanDeliver(85205)
 
 
 /* 
@@ -73,6 +86,17 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 // CODE HERE
 
 
+//function weCanDeliverTwo(arr) {
+  //     for (let i = 0; i < arr.length; i++){
+    //    if (deliveryAreaZipCodes.includes(85205 || 85204 || 85203)){
+      ///      weWillDeliver.push(zipcode)
+         //   console.log("You're in our delivery zone!")
+        //}   else {
+          //  weWillNot
+          //  console.log("Sorry, we can't deliver to that address.')
+       //}
+    //}
+//weCanDeliverTwo(deliveryAreaZipCodes)
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -86,7 +110,7 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
     Read on for more instructions.
 */
 
-const deals = [
+let deals = [
     {
         title: '15% Off!', 
         desc: 'Applied to your entire order when you spend $30 or more'
@@ -107,9 +131,7 @@ const deals = [
 */
 
 //CODE HERE
-
-
-
+const firstDealTitle = deals['title'].replace('15%', '10%')
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -124,3 +146,6 @@ const deals = [
 */
 
 //CODE HERE
+
+let secondDealsDesc = deals.desc.replace('March', 'April')
+let trimmedSecondDealsDesc = deals.desc.trim()

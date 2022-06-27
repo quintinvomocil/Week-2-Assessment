@@ -32,6 +32,16 @@
 
 //CODE HERE
 
+const pizza = {
+    'name': 'The Big One',
+    'price': 56,
+    'category': 'Entree',
+    'popularity': 1,
+    'rating': 100,
+    'tags': ['tasty', 'favorite', 'monster pizza'],
+};
+
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,6 +54,8 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
+
 
 /*
     Second, log the second tag in your pizza's
@@ -53,6 +65,8 @@
 */
 
 //CODE HERE
+
+console.log(pizza.tags[1])
 
 
 /*
@@ -64,6 +78,9 @@
 
 //CODE HERE
 
+let {price} = pizza
+console.log(price)
+
 
 /*
     Fourth, and last, destructure the category
@@ -73,6 +90,9 @@
 */
 
 //CODE HERE
+
+let {category} = pizza
+console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -88,6 +108,44 @@
 */
 
 //CODE HERE
+
+let foodArr = [
+    {'name': 'Side Salad',
+    'price': 5,
+    'category': 'Appetizer',
+    'popularity': 15,
+    'rating': 65,
+    'tags': ['light', 'fresh'],
+    },
+    {'name': 'Cookie',
+    'price': 10,
+    'category': 'Dessert',
+    'popularity': 2,
+    'rating': 99,
+    'tags': ['tasty', 'sweet', 'warm'],
+    },
+    {'name': 'Breadstick',
+    'price': 13,
+    'category': 'Appetizer',
+    'popularity': 10,
+    'rating': 86,
+    'tags': ['homemade', 'fragrant'],
+    },
+    {'name': 'The Veggie One',
+    'price': 45,
+    'category': 'Entree',
+    'popularity': 8,
+    'rating': 90,
+    'tags': ['veggies', 'gluten free', 'light option'],
+    },
+    {'name': 'The Small One',
+    'price': 23,
+    'category': 'Entree',
+    'popularity': 55,
+    'rating': 1,
+    'tags': ['small', 'for kids', 'light pizza'],
+    }
+]
 
 
 
@@ -105,9 +163,12 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = arr => {
+    const filtered = foodArr.filter(obj => obj.tags)
+    return filtered[0]
+}
 
-
+console.log(filteredFood('fresh'))
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -149,6 +210,10 @@
 */
 
 //CODE HERE
+
+const filteredByProperty = (property, number, price) => {
+    const 
+}
 
 
 /*
