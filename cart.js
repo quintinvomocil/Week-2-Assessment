@@ -90,6 +90,11 @@ let calcFinalPrice = (cartTotal, couponValue, tax) => {
 
 /*
     TEXT ANSWER HERE
+    I will make a object that is called customerObject and it would have 4 different 
+    properties: name, email, favorite menu item, and desired added item. I would have the name
+    and email to communicate with the customers about menu item changes. The favorite food
+    and desired menu item would be to get a feel for what is working with the menu and 
+    what changes people would like to see.
 
 */
 
@@ -99,3 +104,11 @@ let calcFinalPrice = (cartTotal, couponValue, tax) => {
 */
 
 //CODE HERE
+
+let customerObject = {
+    'Name': 'Stephen',
+    'Email': 'iamamerica@socanyou.com',
+    'Favorite Menu Item': 'Kentucky Fried Steak',
+    'Desired Menu Item': 'Americone Dream'
+};
+
